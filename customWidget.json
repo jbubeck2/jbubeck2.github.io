@@ -4,8 +4,8 @@
   "license": "",
   "id": "com.bubeck.mhp.sac.gpt",
   "version": "1.0.0",
-  "name": "GPT SAC",
-  "newInstancePrefix": "GPTInSAC",
+  "name": "GPTSAC",
+  "newInstancePrefix": "GPTSAC",
   "description": "A custom widget to integrate chatGPT with external data in SAC Analytic application",
   "webcomponents": [
     {
