@@ -45,7 +45,8 @@ const url = "https://gptsac-interested-meerkat-po.cfapps.eu10-004.hana.ondemand.
           requestData
         );
         //console.log(response.choices[0].text);
-        return response.response[0].text;
+        const jsonString = JSON.stringify(response);
+        return jsonString;
       } catch (error) {
         console.error("Fehler bei der Anfrage:", error);
         throw error;
