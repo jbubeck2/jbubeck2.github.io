@@ -1,0 +1,49 @@
+{
+  "eula": "",
+  "vendor": "Jbubeck",
+  "license": "",
+  "id": "com.bubeck.mhp.sac.gpt",
+  "version": "1.0.0",
+  "name": "GPT SAC",
+  "newInstancePrefix": "GPTInSAC",
+  "description": "A custom widget to integrate chatGPT with external data in SAC Analytic application",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "custom-widget",
+      "url": "https://github.com/jbubeck2/gptsac/blob/main/main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+		"width": {
+			"type": "integer",
+			"default": 1
+		},
+		"height": {
+			"type": "integer",
+			"default": 1
+		}
+  },
+  "methods": {
+		"post": {
+			"description": "Wrapper for jQuery post",
+			"parameters": [
+				{
+					"name": "endPoint",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "prompt",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"returnType": "string"
+		}
+  },
+  "events": {
+  }
+}
