@@ -39,7 +39,7 @@ var ajaxCall = (url, requestData) => {
 
       try {
         const { response } = await ajaxCall(
-          `${baseUrl}/${endpoint}`,
+          `https://gptsac-interested-meerkat-po.cfapps.eu10-004.hana.ondemand.com/send-prompt`,
           requestData
         );
         //console.log(response.choices[0].text);
