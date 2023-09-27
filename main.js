@@ -6,7 +6,7 @@ var ajaxCall = (url, requestData) => {
       dataType: "json",
       data: JSON.stringify(requestData),
       crossDomain: true,
-      headers: {"Access-Control-Allow-Headers": "*",
+      headers: {"Access-Control-Allow-Headers": "Content-Type",
                 "Access-Control-Allow-Methods": 'OPTIONS,POST,GET',
                 "Content-Type": "application/json"
       },
