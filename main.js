@@ -40,12 +40,12 @@ const url = "https://gptsac-interested-meerkat-po.cfapps.eu10-004.hana.ondemand.
       };
 
       try {
-        const { response } = await ajaxCall(
+        const response = await ajaxCall(
           `https://gptsac-interested-meerkat-po.cfapps.eu10-004.hana.ondemand.com/send-prompt`,
           requestData
         );
         //console.log(response.choices[0].text);
-        return response.toString();
+        return response;
       } catch (error) {
         console.error("Fehler bei der Anfrage:", error);
         throw error;
