@@ -1,6 +1,3 @@
-const cors = require("cors");
-app.use(cors());
-
 var ajaxCall = (url, requestData) => {
   return new Promise((resolve, reject) => {
     $.ajax({
