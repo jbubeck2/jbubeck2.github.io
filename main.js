@@ -18,6 +18,7 @@ var ajaxCall = (url, requestData) => {
   });
 };
 
+
 const url = "https://gptsac-interested-meerkat-po.cfapps.eu10-004.hana.ondemand.com/send-prompt";
 
 (function () {
