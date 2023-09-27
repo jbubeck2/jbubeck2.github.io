@@ -40,7 +40,7 @@ const url = "https://gptsac-interested-meerkat-po.cfapps.eu10-004.hana.ondemand.
       };
 
       try {
-        const response = await ajaxCall(
+        const { response } = await ajaxCall(
           `https://gptsac-interested-meerkat-po.cfapps.eu10-004.hana.ondemand.com/send-prompt`,
           requestData
         );
