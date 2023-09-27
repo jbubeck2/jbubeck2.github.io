@@ -21,8 +21,6 @@ var ajaxCall = (url, requestData) => {
   });
 };
 
-const baseUrl = "https://gptsac-interested-meerkat-po.cfapps.eu10-004.hana.ondemand.com";
-
 (function () {
   const template = document.createElement("template");
   template.innerHTML = `
@@ -32,7 +30,9 @@ const baseUrl = "https://gptsac-interested-meerkat-po.cfapps.eu10-004.hana.ondem
       </div>
     `;
   class MainWebComponent extends HTMLElement {
-    async post(endpoint, prompt) {
+    async post(prompt) {
+      const baseUrl = "https://gptsac-interested-meerkat-po.cfapps.eu10-004.hana.ondemand.com";
+      const endpoint = 'send-prompt';
       const requestData = {
         prompt: prompt,
       };
