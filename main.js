@@ -6,6 +6,9 @@ var ajaxCall = (url, requestData) => {
       dataType: "json",
       data: JSON.stringify(requestData),
       crossDomain: true,
+      headers: {
+        "Content-Type": "application/json"
+      },
       success: function (response, status, xhr) {
         resolve({ response, status, xhr });
       },
