@@ -31,11 +31,6 @@
 			"description": "Wrapper for jQuery post",
 			"parameters": [
 				{
-					"name": "endPoint",
-					"type": "string",
-					"description": ""
-				},
-				{
 					"name": "prompt",
 					"type": "string",
 					"description": ""
